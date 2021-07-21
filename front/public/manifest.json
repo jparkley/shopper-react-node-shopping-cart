@@ -1,6 +1,6 @@
 {
-  "short_name": "Shoppy",
-  "name": "Shoppy - Your Shopping Site",
+  "short_name": "Shopper",
+  "name": "Shopper - Your Shopping Site",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
