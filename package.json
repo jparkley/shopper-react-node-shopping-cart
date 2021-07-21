@@ -1,0 +1,29 @@
+{
+  "name": "shopper",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "14.17.3"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev:server": "nodemon server",
+    "dev:front": "cd front && npm start",
+    "dev": "concurrently \"npm run dev:server\" && \"npm run dev:front\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd front && npm install && npm run build"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
+  }
+}
