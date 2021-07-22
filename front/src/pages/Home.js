@@ -1,12 +1,13 @@
 import React from "react"
+import ProductList from "../components/products/ProductList"
+import Product from "./Product"
 
 const Home = () => {
   return (
     <div className="row justify-content-center mt-4">
       <div className="col-md-10">
-        <p>Shopper - React Shopping Cart Development Started</p>
-        <p>Products</p>
-        <span>Products will be displayed here</span>
+        <p className="text-center">Shopper - React Shopping Cart Development Started</p>
+        <ProductList />
       </div>
     </div>
   )

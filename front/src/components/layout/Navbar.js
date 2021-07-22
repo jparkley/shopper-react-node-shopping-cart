@@ -9,7 +9,7 @@ const Navbar = () => {
           <div className="d-flex justify-content-between">
             <img src={logo} width="24px" />
             <div className="m-2">
-              <strong>Shopper!</strong>
+              <strong>Shopper Now!</strong>
             </div>
           </div>
         </a>
