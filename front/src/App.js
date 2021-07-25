@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/:productId" component={Product} />
+        <Route path="/products/:productId" component={Product} />
       </Switch>
     </BrowserRouter>
   )

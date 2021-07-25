@@ -6,7 +6,7 @@
     "sku": "COS-SRM-GLW-12",
     "price": 2295,
     "currency": "USD",
-    "description": "Our next generation moisture serum, Glow Water Serum, will repair dry skin.  Made in Germany, designed for severely dehydrated skin.",
+    "description": "Our next generation moisture serum, Glow Water Serum, will repair dry skin.  Made in Germany, for dehydrated skin.",
     "description_long": "Our next generation moisture serum, Glow Water Serum, will repair dry skin.  Made in Germany, designed for severely dehydrated skin.  Our next generation moisture serum, Glow Water Serum, will repair dry skin.  Made in Germany, designed for severely dehydrated skin.",
     "image": "/cos-lwsrm-12.jpg"
   },
@@ -21,17 +21,7 @@
     "description_long": "Best air max sneakers to upgrade your look. Featuring superior quality leather and suede upper.  Best air max sneakers to upgrade your look. Featuring superior quality leather and suede upper.",
     "image": "/sh-mdsnk-01.jpg"
   },
-  {
-    "id": "103",
-    "category": "Shoes",
-    "name": "Keth Cole Patrio Heels",
-    "sku": "SH-HLS-KCP-01",
-    "price": 39500,
-    "currency": "USD",
-    "description": "This iconic heels give you most elegant look. Most wanted designer shoes. Handcrafted.  Luxury shoes.",
-    "description_long": "This iconic heels give you most elegant look. Most wanted designer shoes. Handcrafted.  Luxury shoes.  This iconic heels give you most elegant look. Most wanted designer shoes. Handcrafted.  Luxury shoes.",
-    "image": "/sh-heels-pat-01.jpg"
-  },
+
   {
     "id": "104",
     "category": "Accessories",
@@ -42,6 +32,17 @@
     "description": "Become your own barista with this gleaming silver espresso machine.",
     "description_long": "Constructed with a high-pressure Italian pump, the machine also offers low-pressure pre-infusion for precisely balanced flavor extraction. The unique Dry Steam process tops every espresso shot with rich crema, while the commercial-style, 360° swivel steaming wand froths milk into a dreamily texturized microfoam.",
     "image": "/acs-watch-01.jpg"
+  },
+  {
+    "id": "103",
+    "category": "Shoes",
+    "name": "Keth Cole Patrio Heels",
+    "sku": "SH-HLS-KCP-01",
+    "price": 39500,
+    "currency": "USD",
+    "description": "This iconic heels give you most elegant look. Most wanted designer shoes. Handcrafted.  Luxury shoes.",
+    "description_long": "This iconic heels give you most elegant look. Most wanted designer shoes. Handcrafted.  Luxury shoes.  This iconic heels give you most elegant look. Most wanted designer shoes. Handcrafted.  Luxury shoes.",
+    "image": "/sh-heels-pat-01.jpg"
   },
   {
     "id": "105",
@@ -56,6 +57,7 @@
   },
   {
     "id": "106",
+    "category": "Clothes",
     "name": "Klee Solid Suit Slim Fit",
     "sku": "CL-SUT-DRK-01",
     "price": 56500,
