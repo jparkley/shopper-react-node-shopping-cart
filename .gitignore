@@ -1,13 +1,13 @@
 
 # dependencies
 /node_modules
+/server/products.json
 /z-images
 /z-temp
 sunseo.txt
 /front/node_modules
 /front/public/images
 /front/src/components/layout/shopping.svg
-/server/products.json
 
 # misc
 .env
