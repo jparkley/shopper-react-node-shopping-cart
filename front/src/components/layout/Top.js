@@ -1,24 +1,24 @@
 import PropTypes from "prop-types"
 
-const Top = ({ name, category }) => {
+const Top = ({ title, subtitle }) => {
   return (
     <>
-      <p className="text-center mb-4 display-6">
-        <strong>{name}</strong>
+      <p className="text-center mb-2 display-6">
+        <strong>{title}</strong>
       </p>
-      <h5 className="text-center mb-5">{category}</h5>
+      <h5 className="text-center mb-5">{subtitle}</h5>
     </>
   )
 }
 
 Top.propTypes = {
   title: PropTypes.string,
-  description: PropTypes.string
+  subtitle: PropTypes.string
 }
 
 Top.defaultProps = {
   title: "Shop Now",
-  category: "Modern and upscale shopping destination"
+  subtitle: "Modern and upscale shopping destination"
 }
 
 export default Top

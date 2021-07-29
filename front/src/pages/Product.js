@@ -17,14 +17,14 @@ const Product = () => {
     <>
       <div className="row justify-content-center mt-4">
         <div className="col-md-10 p-2 title">
-          <Top name={product.name} category={product.category} />
+          <Top title={product.title} subtitle={product.subtitle} />
         </div>
       </div>
       <div className="row justify-content-center mt-8">
         <div className="col-md-4">
           <div className="p-10">
             <h4 className="text-center">
-              {product.name} ${product.price}
+              {product.title} ${product.price}
             </h4>
             <p>
               <strong>{product.description}</strong>
@@ -37,7 +37,7 @@ const Product = () => {
           </div>
         </div>
         <div className="col-md-4">
-          <img className="img-fluid" src={`${process.env.PUBLIC_URL}/images/products/${product.image}`} alt={product.name} />
+          <img className="img-fluid rounded shadow-1" src={`${process.env.PUBLIC_URL}/images/products/${product.image}`} alt={product.name} />
         </div>
       </div>
     </>
