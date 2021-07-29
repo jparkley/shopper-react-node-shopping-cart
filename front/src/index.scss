@@ -9,8 +9,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-/* convert this to scss using webpack.mix.js */
-/*This is modifying the btn-primary colors but you could create your own .btn-something class as well*/
 .btn-primary {
   color: #fff;
   background-color: #0495c9;
@@ -24,4 +22,36 @@ code {
   color: #fff;
   background-color: #00b3db;
   border-color: #285e8e; /*set the color you want here*/
+}
+
+@keyframes spinner {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+
+.spinner {
+  height: 20vh;
+  opacity: 1;
+  position: relative;
+  transition: opacity linear 0.1s;
+  &::before {
+    animation: 2s linear infinite spinner;
+    border: solid 3px #eee;
+    border-bottom-color: #ef6565;
+    border-radius: 50%;
+    content: "";
+    height: 40px;
+    left: 50%;
+    opacity: inherit;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    transform-origin: center;
+    width: 40px;
+    will-change: transform;
+  }
 }
