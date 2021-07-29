@@ -1,7 +1,7 @@
 [
   {
     "id": "101",
-    "category": "Cosmetics",
+    "category": "Organic Cosmetics",
     "name": "Glow Water Serum 12 Oz",
     "sku": "COS-SRM-GLW-12",
     "price": 2295,
@@ -12,7 +12,7 @@
   },
   {
     "id": "102",
-    "category": "Shoes",
+    "category": "Fashion Shoes",
     "name": "Max Design Sneaker",
     "sku": "SH-SNK-MD-01",
     "price": 19595,
@@ -24,7 +24,7 @@
 
   {
     "id": "104",
-    "category": "Accessories",
+    "category": "Up·scale Accessories",
     "name": "Bonado Super GQ Watch",
     "sku": "ACS-WAT-GQ-01",
     "price": 95595,
@@ -35,7 +35,7 @@
   },
   {
     "id": "103",
-    "category": "Shoes",
+    "category": "Boutique Shoes",
     "name": "Keth Cole Patrio Heels",
     "sku": "SH-HLS-KCP-01",
     "price": 39500,
@@ -46,7 +46,7 @@
   },
   {
     "id": "105",
-    "category": "Accessories",
+    "category": "Fashion Accessories",
     "name": "Bouron Caperan Sunglasses 201",
     "sku": "ACS-SUNGL-01",
     "price": 12500,
@@ -57,7 +57,7 @@
   },
   {
     "id": "106",
-    "category": "Clothes",
+    "category": "Classic Clothes",
     "name": "Klee Solid Suit Slim Fit",
     "sku": "CL-SUT-DRK-01",
     "price": 56500,
