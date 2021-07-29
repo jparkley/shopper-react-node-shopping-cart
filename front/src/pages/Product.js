@@ -1,19 +1,16 @@
 import axios from "axios"
-import { useEffect, useState } from "react"
+import { useQuery } from "react-query"
 import { useParams } from "react-router-dom"
 import formatPrice from "../components/tools/formatPrice"
 import Top from "../components/layout/Top"
+import Spinner from "../components/tools/Spinner"
 
 const Product = () => {
   const { productId } = useParams()
-  const [product, setProduct] = useState([])
 
-  useEffect(() => {
-    axios
-      .get(`/api/products/${productId}`)
-      .then(res => res.data.product)
-      .then(product => setProduct(product))
-  }, [])
+  const { data: product, isLoading } = useQuery("Product", () => axios(`/api/products/${productId}`).then(res => res.data.product))
+
+  if (isLoading) return <Spinner />
 
   //const price = formatPrice(product)
   return (
