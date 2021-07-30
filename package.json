@@ -22,7 +22,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "node-sass": "^6.0.1",
-    "node-scss": "^7.0.3"
+    "node-scss": "^7.0.3",
+    "react-icons": "^4.2.0"
   },
   "devDependencies": {
     "concurrently": "^6.2.0",

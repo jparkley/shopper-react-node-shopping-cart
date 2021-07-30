@@ -6,7 +6,7 @@ const Top = ({ title, subtitle }) => {
       <p className="text-center mb-2 display-6">
         <strong>{title}</strong>
       </p>
-      <h5 className="text-center mb-5">{subtitle}</h5>
+      <h5 className="text-center mb-4">{subtitle}</h5>
     </>
   )
 }

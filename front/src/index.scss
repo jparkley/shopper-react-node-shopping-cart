@@ -11,8 +11,8 @@ code {
 
 .btn-primary {
   color: #fff;
-  background-color: #0495c9;
-  border-color: #357ebd; /*set the color you want here*/
+  background-color: #7accc3;
+  border-color: #7accc3;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -21,7 +21,7 @@ code {
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
   background-color: #00b3db;
-  border-color: #285e8e; /*set the color you want here*/
+  border-color: #00b3db;
 }
 
 @keyframes spinner {
@@ -56,11 +56,23 @@ code {
   }
 }
 
-.title {
-  p {
-    color: #6c3483;
+.product-item {
+  .top {
+    p {
+      color: #6c3483;
+    }
+    // h5 {
+    //   // font-style: italic;
+    // }
   }
-  h5 {
-    font-style: italic;
+  .right {
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  .social-icons {
+    font-size: 22px;
   }
 }

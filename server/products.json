@@ -1,8 +1,9 @@
 [
   {
-    "id": "101",
-    "category": "Organic Cosmetics",
-    "name": "Glow Water Serum 12 Oz",
+    "id": "2101",
+    "category": "Cosmetics",
+    "title": "Glow Water Serum 12 Oz",
+    "subtitle": "Organic Skin Care, Natural Beauty",
     "sku": "COS-SRM-GLW-12",
     "price": 2295,
     "currency": "USD",
@@ -11,9 +12,10 @@
     "image": "/cos-lwsrm-12.jpg"
   },
   {
-    "id": "102",
-    "category": "Fashion Shoes",
-    "name": "Max Design Sneaker",
+    "id": "2102",
+    "category": "Shoes",
+    "title": "Max Design Sneaker",
+    "subtitle": "Trendy Favorites",
     "sku": "SH-SNK-MD-01",
     "price": 19595,
     "currency": "USD",
@@ -23,9 +25,10 @@
   },
 
   {
-    "id": "104",
-    "category": "Up·scale Accessories",
-    "name": "Bonado Super GQ Watch",
+    "id": "2104",
+    "category": "Accessories",
+    "title": "Bonado Super GQ Watch",
+    "subtitle": "Up·scale Time at Premier site",
     "sku": "ACS-WAT-GQ-01",
     "price": 95595,
     "currency": "USD",
@@ -34,9 +37,10 @@
     "image": "/acs-watch-01.jpg"
   },
   {
-    "id": "103",
-    "category": "Boutique Shoes",
-    "name": "Keth Cole Patrio Heels",
+    "id": "2103",
+    "category": "Shoes",
+    "title": "Keth Cole Patrio Heels",
+    "subtitle": "Boutique Shoes, Feel Confident!",
     "sku": "SH-HLS-KCP-01",
     "price": 39500,
     "currency": "USD",
@@ -45,9 +49,10 @@
     "image": "/sh-heels-pat-01.jpg"
   },
   {
-    "id": "105",
-    "category": "Fashion Accessories",
-    "name": "Bouron Caperan Sunglasses 201",
+    "id": "2105",
+    "category": "Accessories",
+    "title": "Bouron Caperan Sunglasses 201",
+    "subtitle": "Luxury pair of shades",
     "sku": "ACS-SUNGL-01",
     "price": 12500,
     "currency": "USD",
@@ -56,9 +61,10 @@
     "image": "/acs-sungl-01.jpg"
   },
   {
-    "id": "106",
-    "category": "Classic Clothes",
-    "name": "Klee Solid Suit Slim Fit",
+    "id": "2106",
+    "category": "Clothes",
+    "title": "Klee Solid Suit Slim Fit",
+    "subtitle": "Classic Cuts and Premium Fabrics",
     "sku": "CL-SUT-DRK-01",
     "price": 56500,
     "currency": "USD",
