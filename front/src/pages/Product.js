@@ -31,21 +31,25 @@ const Product = () => {
         <img className="img-fluid rounded shadow-1" src={`${process.env.PUBLIC_URL}/images/products/${product.image}`} alt={product.name} />
       </div>
       <div className="col-md-4 p-3 right">
-        <div className="">
-          <p className="text-muted">
-            <small>Item #: {product.id}</small>
-          </p>
-          <p>${product.price}</p>
-          <div className="mb-4">
-            <button type="button" className="btn btn-primary btn-lg btn-block btn-hover">
-              Add to Cart
-            </button>
+        <div className="d-flex flex-column">
+          <div className="product-info">
+            <p className="text-muted">
+              <small>Item #: {product.id}</small>
+            </p>
+            <p>${product.price}</p>
+            <div className="mb-4">
+              <button type="button" className="btn btn-primary btn-lg btn-block btn-hover">
+                Add to Cart
+              </button>
+            </div>
+            <p>{product.description}</p>
+            <div>
+              <p>
+                <small>{product.description_long}</small>
+              </p>
+            </div>
           </div>
-          <p>{product.description}</p>
-          <p>
-            <small>{product.description_long}</small>
-          </p>
-          <div className="social-icons">
+          <div className="social-icons text-end">
             <FaTwitter /> <FaYoutube /> <FaYoutube /> <FaMailBulk />
           </div>
         </div>

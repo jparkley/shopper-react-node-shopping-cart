@@ -70,9 +70,17 @@ code {
       font-size: 1.2rem;
       margin-bottom: 0.8rem;
     }
-  }
-
-  .social-icons {
-    font-size: 22px;
+    .product-info {
+      height: 470px;
+      flex-shrink: 0;
+    }
+    .social-icons {
+      flex-shrink: 0;
+      flex-grow: 1;
+      font-size: 22px;
+      svg {
+        margin-right: 10px;
+      }
+    }
   }
 }
