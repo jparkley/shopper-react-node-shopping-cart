@@ -6,9 +6,13 @@
 /front/node_modules
 /front/public/images
 /front/src/components/layout/shopping.svg
+/front/webpack.config
+/front/.env
 
 # misc
 .env
+.env.dev
+
 /server/products.json
 /z-temp
 sunseo.txt
