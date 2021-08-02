@@ -6,6 +6,7 @@ import { FaTwitter, FaYoutube, FaFacebookSquare, FaMailBulk } from "react-icons/
 import formatPrice from "../components/tools/formatPrice"
 import Top from "../components/layout/Top"
 import Spinner from "../components/tools/Spinner"
+import AddToCart from "../components/checkout/AddToCart"
 
 const Product = () => {
   const { productId } = useParams()
@@ -38,9 +39,7 @@ const Product = () => {
             </p>
             <p>${product.price}</p>
             <div className="mb-4">
-              <button type="button" className="btn btn-primary btn-lg btn-block btn-hover">
-                Add to Cart
-              </button>
+              <AddToCart product={product} />
             </div>
             <p>{product.description}</p>
             <div>
