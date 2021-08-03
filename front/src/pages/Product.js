@@ -7,6 +7,7 @@ import formatPrice from "../components/tools/formatPrice"
 import Top from "../components/layout/Top"
 import Spinner from "../components/tools/Spinner"
 import AddToCart from "../components/checkout/AddToCart"
+import RemoveFromCart from "../components/checkout/RemoveFromCart"
 
 const Product = () => {
   const { productId } = useParams()
@@ -40,6 +41,7 @@ const Product = () => {
             <p>${product.price}</p>
             <div className="mb-4">
               <AddToCart product={product} />
+              <RemoveFromCart product={product} />
             </div>
             <p>{product.description}</p>
             <div>
