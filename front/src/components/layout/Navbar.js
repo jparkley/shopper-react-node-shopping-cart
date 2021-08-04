@@ -1,4 +1,6 @@
 import { Collapse } from "bootstrap"
+import CartSummary from "../checkout/CartSummary"
+import CheckoutCart from "../checkout/CheckoutCart"
 import logo from "./shopping.svg"
 
 const Navbar = () => {
@@ -29,13 +31,16 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-
-        <form className="d-flex">
+        <div>
+          <CartSummary />
+          <CheckoutCart />
+        </div>
+        {/* <form className="d-flex">
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
           <button className="btn btn-outline-success" type="submit">
             Search
           </button>
-        </form>
+        </form> */}
       </div>
     </nav>
   )

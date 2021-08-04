@@ -24,7 +24,6 @@
     "express": "^4.17.1",
     "node-sass": "^6.0.1",
     "node-scss": "^7.0.3",
-    "react-icons": "^4.2.0",
     "stripe": "^8.167.0",
     "use-shopping-cart": "^3.0.0"
   },
