@@ -31,7 +31,7 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-        <div>
+        <div className="navbar-nav">
           <CartSummary />
           <CheckoutCart />
         </div>

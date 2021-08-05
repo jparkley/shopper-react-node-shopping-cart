@@ -2,7 +2,7 @@
   {
     "id": "2101",
     "category": "Cosmetics",
-    "title": "Glow Water Serum 12 Oz",
+    "name": "Glow Water Serum 12 Oz",
     "subtitle": "Organic Skin Care, Natural Beauty",
     "sku": "COS-SRM-GLW-12",
     "price": 2295,
@@ -14,7 +14,7 @@
   {
     "id": "2112",
     "category": "Shoes",
-    "title": "Max Design Sneaker",
+    "name": "Max Design Sneaker",
     "subtitle": "Trendy Favorites",
     "sku": "SH-SNK-MD-01",
     "price": 19595,
@@ -27,7 +27,7 @@
   {
     "id": "2124",
     "category": "Accessories",
-    "title": "Bonado Super GQ Watch",
+    "name": "Bonado Super GQ Watch",
     "subtitle": "Up·scale Time at Premier site",
     "sku": "ACS-WAT-GQ-01",
     "price": 95595,
@@ -39,7 +39,7 @@
   {
     "id": "2133",
     "category": "Shoes",
-    "title": "Keth Cole Patrio Heels",
+    "name": "Keth Cole Patrio Heels",
     "subtitle": "Boutique Shoes, Feel Confident!",
     "sku": "SH-HLS-KCP-01",
     "price": 39500,
@@ -51,7 +51,7 @@
   {
     "id": "2145",
     "category": "Accessories",
-    "title": "Bouron Caperan Sunglasses 201",
+    "name": "Bouron Caperan Sunglasses 201",
     "subtitle": "Luxury pair of shades",
     "sku": "ACS-SUNGL-01",
     "price": 12500,
@@ -63,7 +63,7 @@
   {
     "id": "2156",
     "category": "Clothes",
-    "title": "Klee Solid Suit Slim Fit",
+    "name": "Klee Solid Suit Slim Fit",
     "subtitle": "Classic Cuts and Premium Fabrics",
     "sku": "CL-SUT-DRK-01",
     "price": 56500,

@@ -21,7 +21,7 @@ const Product = () => {
     <div className="row justify-content-center product-item">
       <div className="col-md-10 p-4 top">
         <p className="text-center mb-2 display-6">
-          <strong>{product.title}</strong>
+          <strong>{product.name}</strong>
         </p>
         <h5 className="text-center mb-2">
           <em>{product.subtitle}</em>

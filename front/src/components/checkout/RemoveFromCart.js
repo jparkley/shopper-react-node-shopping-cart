@@ -6,7 +6,7 @@ const RemoveFromCart = ({ product }) => {
 
   const handleRemoveItem = () => {
     removeItem(product.id)
-    toast.success(`${product.title} is removed from the cart.`)
+    toast.success(`${product.name} is removed from the cart.`)
   }
 
   return (

@@ -13,7 +13,7 @@ const ProductItem = ({ product }) => {
         <div className="card-body">
           <div className="card-title">
             <h5>
-              {product.category} &gt; {product.title}
+              {product.category} &gt; {product.name}
             </h5>
           </div>
           <div className="card-text">
