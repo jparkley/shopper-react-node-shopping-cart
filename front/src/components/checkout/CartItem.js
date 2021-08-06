@@ -7,23 +7,29 @@ const CartItem = ({ item }) => {
   return (
     <>
       <div className="modal-body">
-        <div className="d-inline-flex align-items-center w-100">
-          <img className="img-tiny me-2" src={`${process.env.PUBLIC_URL}/images/products/${item.image}`} />
-          <span>
-            {item.name} ({item.sku})
-          </span>
-          <span className="ms-5">{price}</span>
-          <div className="text-right ms-5">
-            <input className="text-right form-control w-50 input-quantity" type="number" value={item.quantity} onChange={handleSetItemQuantity} />
+        <div className="d-flex align-items-center mt-3">
+          <img className="img-tiny me-4" src={`${process.env.PUBLIC_URL}/images/products/${item.image}`} />
+          <div>
+            <span>
+              {item.name} ({item.sku})
+            </span>
+            <p className="text-start mt-1">
+              <strong>
+                {price} x {item.quantity}
+              </strong>
+            </p>
+          </div>
+          <div className="ms-auto text-end">
+            <input className="text-end form-control input-quantity" type="number" value={item.quantity} min={0} onChange={handleSetItemQuantity} />
           </div>
         </div>
       </div>
       <div className="modal-footer">
-        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
-          Close
+        <button type="button" className="btn btn-primary text-dark">
+          <strong>Checkout</strong>
         </button>
-        <button type="button" className="btn btn-primary">
-          Save changes
+        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
+          Keep Shopping
         </button>
       </div>
     </>
