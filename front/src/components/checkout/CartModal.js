@@ -1,6 +1,6 @@
 import Modal from "react-modal"
 import { useShoppingCart } from "use-shopping-cart"
-import ModalItem from "./ModalItem"
+import CartItem from "./CartItem"
 
 Modal.setAppElement("#root")
 
@@ -11,10 +11,19 @@ const CartModal = ({ isOpen, toggleModal }) => {
 
   return (
     <Modal isOpen={isOpen} onRequestClose={toggleModal} contentLabel="Cart Modal" closeTimeoutMS={500} className="cart-modal" overlayClassName="cart-overlay">
-      {formattedTotalPrice} ({cartCount} Items)
-      {cartItems.map(item => (
-        <ModalItem key={item.id} item={item} />
-      ))}
+      <div className="d-flex d-inline-flex align-items center">
+        <span className="me-3">Cart Summary</span>
+        <span>
+          <strong>
+            {formattedTotalPrice} ({cartCount} Items)
+          </strong>
+        </span>
+      </div>
+      <div className="row">
+        {cartItems.map(item => (
+          <CartItem key={item.id} item={item} />
+        ))}
+      </div>
     </Modal>
   )
 }
