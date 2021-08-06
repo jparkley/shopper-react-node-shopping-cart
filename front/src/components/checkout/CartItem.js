@@ -1,12 +1,15 @@
+import { useShoppingCart } from "use-shopping-cart"
 import formatPrice from "../tools/formatPrice"
 
 const CartItem = ({ item }) => {
-  console.log(item)
-  const price = formatPrice(item)
-  const handleSetItemQuantity = () => {}
+  const { setItemQuantity } = useShoppingCart()
+  const handleSetItemQuantity = e => {
+    setItemQuantity(item.id, Number(e.target.value))
+  }
+
   return (
     <>
-      <div className="modal-body">
+      <div className="modal-body w-100">
         <div className="d-flex align-items-center mt-3">
           <img className="img-tiny me-4" src={`${process.env.PUBLIC_URL}/images/products/${item.image}`} />
           <div>
@@ -15,7 +18,7 @@ const CartItem = ({ item }) => {
             </span>
             <p className="text-start mt-1">
               <strong>
-                {price} x {item.quantity}
+                {formatPrice(item)} x {item.quantity}
               </strong>
             </p>
           </div>
@@ -23,14 +26,6 @@ const CartItem = ({ item }) => {
             <input className="text-end form-control input-quantity" type="number" value={item.quantity} min={0} onChange={handleSetItemQuantity} />
           </div>
         </div>
-      </div>
-      <div className="modal-footer">
-        <button type="button" className="btn btn-primary text-dark">
-          <strong>Checkout</strong>
-        </button>
-        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
-          Keep Shopping
-        </button>
       </div>
     </>
   )

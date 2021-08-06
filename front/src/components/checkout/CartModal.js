@@ -7,11 +7,10 @@ Modal.setAppElement("#root")
 const CartModal = ({ isOpen, toggleModal }) => {
   const { cartCount, formattedTotalPrice, cartDetails } = useShoppingCart()
   const cartItems = Object.keys(cartDetails).map(key => cartDetails[key])
-  console.log(cartItems)
 
   return (
     <Modal isOpen={isOpen} onRequestClose={toggleModal} contentLabel="Cart Modal" closeTimeoutMS={500} className="cart-modal" overlayClassName="cart-overlay">
-      <div className="d-flex d-inline-flex align-items center">
+      <div className="modal-lg d-flex d-inline-flex align-items center">
         <span className="me-3">Cart Summary</span>
         <span>
           <strong>
@@ -23,6 +22,14 @@ const CartModal = ({ isOpen, toggleModal }) => {
         {cartItems.map(item => (
           <CartItem key={item.id} item={item} />
         ))}
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-primary text-dark">
+          <strong>Checkout</strong>
+        </button>
+        <button type="button" className="btn btn-primary text-dark" data-bs-dismiss="modal" onClick={toggleModal}>
+          Keep Shopping
+        </button>
       </div>
     </Modal>
   )

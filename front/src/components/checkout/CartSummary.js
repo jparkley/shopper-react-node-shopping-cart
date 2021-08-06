@@ -4,7 +4,7 @@ import { FaShoppingCart } from "react-icons/fa"
 import CartModal from "./CartModal"
 
 const CartSummary = () => {
-  const { formattedTotalPrice, cartTotal, cartCount } = useShoppingCart()
+  const { formattedTotalPrice, cartCount } = useShoppingCart()
   const [isOpen, setIsOpen] = useState(false)
   const toggleModal = () => setIsOpen(!isOpen)
   return (
