@@ -5,17 +5,17 @@ import { useShoppingCart } from "use-shopping-cart"
 function useCheckout() {
   const { redirectToCheckout, cartDetails } = useShoppingCart()
 
-  function handleCheckout() {
+  async function handleCheckout() {
     const session = await axios
       .post("/api/checkout-sessions", cartDetails)
       .then(res => res.data)
-      .catch(e => {
+      .catch(error => {
         toast.error("Checkout failed")
-        console.log("Error during checkout")
+        console.log("Error!", error)
       })
 
     if (session) {
-      redirectToCheckout({ sessionId: sesssion.id })
+      redirectToCheckout({ sessionId: session.id })
     }
   }
 
