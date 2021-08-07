@@ -13,13 +13,13 @@ const CartModal = ({ isOpen, toggleModal }) => {
       <div className="">
         <div className="modal-dialog modal-lg d-flex d-inline-flex align-items center">
           <div className="modal-content">
-            <div className="modal-header">
+            <div className="modal-header d-inline-flex justify-content-between">
               <span className="modal-title me-3">Cart Summary</span>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              <span>
+              <span className="d-flex align-items-center">
                 <strong>
                   {formattedTotalPrice} ({cartCount} Items)
                 </strong>
+                <button type="button" class="btn-close ms-1" aria-label="Close" onClick={toggleModal}></button>
               </span>
             </div>
 

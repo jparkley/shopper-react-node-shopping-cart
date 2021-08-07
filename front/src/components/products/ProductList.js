@@ -2,7 +2,7 @@
 import { useQuery } from "react-query"
 import axios from "axios"
 import ProductItem from "./ProductItem"
-import Spinner from "../tools/Spinner"
+import Spinner from "../utils/Spinner"
 
 const ProductList = () => {
   // const [products, setProducts] = useState([])

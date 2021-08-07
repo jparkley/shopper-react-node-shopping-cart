@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import formatPrice from "../tools/formatPrice"
+import formatPrice from "../utils/formatPrice"
 import Product from "../../pages/Product"
 
 const ProductItem = ({ product }) => {

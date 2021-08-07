@@ -1,5 +1,5 @@
 import { useShoppingCart } from "use-shopping-cart"
-import formatPrice from "../tools/formatPrice"
+import formatPrice from "../utils/formatPrice"
 
 const CartItem = ({ item }) => {
   const { setItemQuantity } = useShoppingCart()

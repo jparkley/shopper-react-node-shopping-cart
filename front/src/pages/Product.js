@@ -3,9 +3,9 @@ import { useQuery } from "react-query"
 import { useParams } from "react-router-dom"
 import { FaTwitter, FaYoutube, FaFacebookSquare, FaMailBulk } from "react-icons/fa"
 
-import formatPrice from "../components/tools/formatPrice"
+import formatPrice from "../components/utils/formatPrice"
 import Top from "../components/layout/Top"
-import Spinner from "../components/tools/Spinner"
+import Spinner from "../components/utils/Spinner"
 import AddToCart from "../components/checkout/AddToCart"
 import RemoveFromCart from "../components/checkout/RemoveFromCart"
 
