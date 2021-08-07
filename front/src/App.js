@@ -7,9 +7,11 @@ import { Toaster } from "react-hot-toast"
 import Navbar from "./components/layout/Navbar"
 import Home from "./pages/Home"
 import Product from "./pages/Product"
+import Result from "./pages/Result"
 
 const queryClient = new QueryClient()
 const STRIPE_API_P = process.env.REACT_APP_STRIPE_API_P
+console.log(STRIPE_API_P)
 //const stripePromise = loadStripe(STRIPE_API_P)
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/products/:productId" component={Product} />
+            <Route path="/result" component={Result} />
           </Switch>
         </BrowserRouter>
       </CartProvider>

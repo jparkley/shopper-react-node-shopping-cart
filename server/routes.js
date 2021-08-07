@@ -1,5 +1,7 @@
 require("dotenv").config()
 const express = require("express")
+const stripe = require("stripe")(process.env.REACT_APP_STRIPE_API_SECRET)
+const validateCartItems = require("use-shopping-cart/utilities").validateCartItems
 const products = require("./products.json")
 
 module.exports = function getRoutes() {
@@ -28,4 +30,36 @@ function getProduct(req, res) {
   }
 }
 
-function createCheckoutSession() {}
+async function createCheckoutSession(req, res) {
+  try {
+    const validated_items = validateCartItems(products, req.body)
+    //console.log(validated_items);
+    const line_items = validated_items.map(item => {
+      return {
+        price_data: {
+          currency: "usd",
+          product_data: {
+            name: item.price_data.product_data.name
+          },
+          unit_amount: item.price_data.unit_amount
+        },
+        quantity: item.quantity
+      }
+    })
+    //console.log(line_items)
+    const origin = process.env.NODE_ENV === "production" ? req.headers.origin : "http://localhost:3000"
+
+    const checkoutSession = await stripe.checkout.sessions.create({
+      payment_method_types: ["card"],
+      mode: "payment",
+      line_items,
+      success_url: `${origin}/result?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: origin
+    })
+    console.log(checkoutSession)
+    res.status(200).json(checkoutSession)
+  } catch (error) {
+    console.log(error)
+    res.status(500).json({ statusCode: 500, message: error.message })
+  }
+}

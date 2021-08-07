@@ -37,7 +37,7 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <div className="d-flex">
+            <div className="d-flex align-items-center">
               <CartSummary />
               <CheckoutCart />
             </div>
