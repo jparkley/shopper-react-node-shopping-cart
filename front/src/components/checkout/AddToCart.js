@@ -10,7 +10,7 @@ const AddToCart = ({ product }) => {
   }
 
   return (
-    <button type="button" className="btn btn-primary btn-lg btn-block btn-hover" onClick={handleAddItem}>
+    <button type="button" className="btn btn-primary btn-lg btn-block btn-hover me-2" onClick={handleAddItem}>
       Add to Cart
     </button>
   )

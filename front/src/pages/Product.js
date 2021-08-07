@@ -41,7 +41,7 @@ const Product = () => {
             <p>${product.price}</p>
             <div className="mb-4">
               <AddToCart product={product} />
-              <RemoveFromCart product={product} />
+              {/* <RemoveFromCart product={product} /> */}
             </div>
             <p>{product.description}</p>
             <div>
