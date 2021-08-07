@@ -18,6 +18,8 @@ function useCheckout() {
       redirectToCheckout({ sessionId: sesssion.id })
     }
   }
+
+  return handleCheckout
 }
 
 export default useCheckout
