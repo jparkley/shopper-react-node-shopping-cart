@@ -2,9 +2,7 @@ import axios from "axios"
 import { useQuery } from "react-query"
 import { useParams } from "react-router-dom"
 import { FaTwitter, FaYoutube, FaFacebookSquare, FaMailBulk } from "react-icons/fa"
-
 import formatPrice from "../components/utils/formatPrice"
-import Top from "../components/layout/Top"
 import Spinner from "../components/utils/Spinner"
 import AddToCart from "../components/checkout/AddToCart"
 import RemoveFromCart from "../components/checkout/RemoveFromCart"
@@ -16,7 +14,7 @@ const Product = () => {
 
   if (isLoading) return <Spinner />
 
-  //const price = formatPrice(product)
+  const price = formatPrice(product)
   return (
     <div className="row justify-content-center product-item">
       <div className="col-md-10 p-4 top">
@@ -38,7 +36,7 @@ const Product = () => {
             <p className="text-muted">
               <small>Item #: {product.id}</small>
             </p>
-            <p>${product.price}</p>
+            <p>{price}</p>
             <div className="mb-4">
               <AddToCart product={product} />
               {/* <RemoveFromCart product={product} /> */}
@@ -51,7 +49,7 @@ const Product = () => {
             </div>
           </div>
           <div className="social-icons text-end">
-            <FaTwitter /> <FaYoutube /> <FaYoutube /> <FaMailBulk />
+            <FaTwitter /> <FaYoutube /> <FaFacebookSquare /> <FaMailBulk />
           </div>
         </div>
       </div>

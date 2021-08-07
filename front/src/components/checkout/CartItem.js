@@ -11,7 +11,7 @@ const CartItem = ({ item }) => {
   return (
     <>
       <div className="d-flex align-items-center mt-3">
-        <img className="img-tiny me-4" src={`${process.env.PUBLIC_URL}/images/products/${item.image}`} />
+        <img className="img-tiny me-4" src={`${process.env.PUBLIC_URL}/images/products/${item.image}`} alt={item.name} />
         <div>
           <span>
             {item.name} ({item.sku})

@@ -15,26 +15,35 @@ const Navbar = () => {
             </div>
           </div>
         </a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <a className="nav-link active" aria-current="page" href="#">
-              Special
-            </a>
-            <a className="nav-link" href="#">
-              FAQ
-            </a>
-            <a className="nav-link" href="#">
-              About
-            </a>
+        <div className="collapse navbar-collapse" id="navbarMain">
+          <div className="navbar-nav d-flex justify-content-between w-100">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link active me-2" aria-current="page" href="#">
+                  Special
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link  me-2" href="#">
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a className="nav-link  me-2" href="#">
+                  About
+                </a>
+              </li>
+            </ul>
+            <div className="d-flex">
+              <CartSummary />
+              <CheckoutCart />
+            </div>
           </div>
         </div>
-        <div className="navbar-nav">
-          <CartSummary />
-          <CheckoutCart />
-        </div>
+
         {/* <form className="d-flex">
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
           <button className="btn btn-outline-success" type="submit">

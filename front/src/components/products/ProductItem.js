@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import formatPrice from "../utils/formatPrice"
-import Product from "../../pages/Product"
 
 const ProductItem = ({ product }) => {
   const price = formatPrice(product)
@@ -8,7 +7,7 @@ const ProductItem = ({ product }) => {
     <div className="col mb-5">
       <div className="card h-100" style={{ minHeight: "500px" }}>
         <Link to={`/products/${product.id}`}>
-          <img className="img-fluid" src={`${process.env.PUBLIC_URL}/images/products/${product.image}`} />
+          <img className="img-fluid" src={`${process.env.PUBLIC_URL}/images/products/${product.image}`} alt={product.name} />
         </Link>
         <div className="card-body">
           <div className="card-title">
@@ -25,7 +24,6 @@ const ProductItem = ({ product }) => {
             <div>
               <strong>{price}</strong>
             </div>
-
             <div>
               <button className="btn btn-md">
                 <strong>Add to cart</strong>

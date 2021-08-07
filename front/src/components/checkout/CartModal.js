@@ -1,10 +1,12 @@
 import Modal from "react-modal"
 import { useShoppingCart } from "use-shopping-cart"
+import useCheckout from "../utils/useCheckout"
 import CartItem from "./CartItem"
 
 Modal.setAppElement("#root")
 
 const CartModal = ({ isOpen, toggleModal }) => {
+  const handleCheckout = useCheckout()
   const { cartCount, formattedTotalPrice, cartDetails } = useShoppingCart()
   const cartItems = Object.keys(cartDetails).map(key => cartDetails[key])
 
@@ -19,7 +21,7 @@ const CartModal = ({ isOpen, toggleModal }) => {
                 <strong>
                   {formattedTotalPrice} ({cartCount} Items)
                 </strong>
-                <button type="button" class="btn-close ms-1" aria-label="Close" onClick={toggleModal}></button>
+                <button type="button" className="btn-close ms-1" aria-label="Close" onClick={toggleModal}></button>
               </span>
             </div>
 
@@ -29,7 +31,7 @@ const CartModal = ({ isOpen, toggleModal }) => {
               ))}
             </div>
             <div className="modal-footer">
-              <button type="button" className="btn btn-primary text-dark">
+              <button type="button" className="btn btn-primary text-dark" onClick={handleCheckout}>
                 <strong>Checkout</strong>
               </button>
               <button type="button" className="btn btn-primary text-dark" data-bs-dismiss="modal" onClick={toggleModal}>

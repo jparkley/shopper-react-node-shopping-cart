@@ -14,6 +14,7 @@ const useCheckout = () => {
       })
 
     if (session) {
+      console.log(session)
       redirectToCheckout({ sessionId: session.id })
     }
   }
