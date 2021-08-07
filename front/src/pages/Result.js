@@ -29,7 +29,7 @@ const Result = () => {
       <main role="main" className="inner cover text-center">
         {/* Add image here */}
         <h1 className="cover-heading mt-10">Payment Accepted.</h1>
-        <p className="lead">Below is your payment summary. The items will be shipped to you soon.</p>
+        <p className="lead">Below is your payment summary.</p>
         <p className="lead">
           <h4 className="">Order Total: {total} </h4>
           <h4 className="">Email:{data.customer_details.email} </h4>

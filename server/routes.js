@@ -69,7 +69,7 @@ async function getCheckoutSession(req, res) {
   const { sessionId } = req.params
   try {
     if (!sessionId.startsWith("cs_")) {
-      throw Error("Incorrect checkout session id")
+      throw Error("Incorrect session id")
     }
     const checkout_session = await stripe.checkout.sessions.retrieve(sessionId, { expand: ["payment_intent"] })
     res.status(200).json(checkout_session)
