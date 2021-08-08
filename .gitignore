@@ -3,15 +3,15 @@
 
 /z-images
 /front/node_modules
-/front/public/images
-/front/src/components/layout/shopping.svg
+#/front/public/images
+#/front/src/components/layout/shopping.svg
 /front/src/components/checkout/*.bak.js
 /front/webpack.config.js
 
 # misc
 .env
 .env.dev
-/server/products.json
+#/server/products.json
 /server/*.json
 /z-temp
 sunseo.txt
