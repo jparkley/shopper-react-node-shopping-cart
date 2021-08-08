@@ -48,7 +48,7 @@ async function createCheckoutSession(req, res) {
       }
     })
     //console.log(line_items)
-    const origin = process.env.NODE_ENV === "production" ? req.headers.origin : "http://localhost:3000"
+    const origin = process.env.PUBLIC_URL === "production" ? req.headers.origin : "http://localhost:3000"
 
     const checkoutSession = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
