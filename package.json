@@ -1,4 +1,5 @@
 {
+  "homepage": "http://jparkley.github.io/shopper-react-node-shopping-cart",
   "name": "shopper",
   "version": "1.0.0",
   "description": "",
@@ -7,6 +8,8 @@
   },
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node server",
     "dev:server": "nodemon server",
     "dev:front": "cd front && npm start",
@@ -29,6 +32,7 @@
   },
   "devDependencies": {
     "concurrently": "^6.2.0",
+    "gh-pages": "^3.2.3",
     "nodemon": "^2.0.12"
   }
 }
