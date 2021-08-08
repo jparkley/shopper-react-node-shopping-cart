@@ -57,7 +57,7 @@ async function createCheckoutSession(req, res) {
       success_url: `${origin}/result?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: origin
     })
-    console.log(checkoutSession)
+    //console.log(checkoutSession)
     res.status(200).json(checkoutSession)
   } catch (error) {
     console.log(error)
