@@ -11,8 +11,7 @@ import Result from "./pages/Result"
 
 const queryClient = new QueryClient()
 const STRIPE_API_P = process.env.REACT_APP_STRIPE_API_P
-console.log(STRIPE_API_P)
-//const stripePromise = loadStripe(STRIPE_API_P)
+//const stripePromise = loadStripe(STRIPE_API_P) // No need to use loadStripe
 
 function App() {
   return (
