@@ -36,12 +36,9 @@
 
 ## Installation / Setup
 
-- <a href="https://github.com/jparkley/circle-social-node-mongodb/blob/master/package.json">package.json</a>
-- ENV variables
-  PUBLIC_URL
-  PORT
-  STRIPE_API_SECRET
-  STRIPE_API_P
+- <a href="https://github.com/jparkley/shopper-react-node-shopping-cart/blob/master/package.json">package.json for back-end</a>
+- <a href="https://github.com/jparkley/shopper-react-node-shopping-cart/blob/master/front/package.json">package.json for front-end</a>
+- ENV variables: PUBLIC_URL, PORT, stripe api keys
 
 ## TODO
 
@@ -50,8 +47,8 @@ Static pages
 
 ## Links
 
-- <a href="https://react-query.tanstack.com/">React Query: Data
+- <a href="https://react-query.tanstack.com/" target="_blank">React Query: Data
   synchronization for React</a>
-- <a href="https://useshoppingcart.com/">Use Shopping Cart: Shopping cart state and logic for Stripe checkout</a>
+- <a href="https://useshoppingcart.com/" target="_blank">Use Shopping Cart: Shopping cart state and logic for Stripe checkout</a>
 
-:musical_note:
+:musical_note: Thank you for reading!
