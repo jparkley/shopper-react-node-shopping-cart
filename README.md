@@ -1,6 +1,7 @@
 # Shopping Cart - Shopper
 
-**Shopper is a simple shopping cart in React, Node, Express and Bootstrap. It utilizes react-query, a shopping cart package, 'use-shopping-cart', and payment gateway 'Stripe'. There are also a couple of custom hooks created to follow the DRY principle.**
+**Shopper is a simple shopping cart in React, Node, Express and Bootstrap. It utilizes a data
+synchronization hook 'react-query', a shopping cart package, 'use-shopping-cart', and payment gateway 'Stripe'. There are also a couple of custom hooks created to follow the DRY principle.**
 
 - Homepage: list of products
 - Product page: details of a product.
@@ -13,7 +14,7 @@
 - Front-end: React, Bootstrap, Toaster
 - React packages and hooks: react-query, use-shopping-cart
 - Back-end: Node.js, Express.js,
-- Data: JSON product file
+- Data: JSON file
 - APIs & Axios
 - Stripe
 - Hosted on Heroku
@@ -30,7 +31,11 @@
 <img  style="width:500px" src="https://github.com/jparkley/shopper-react-node-shopping-cart/blob/master/screenshot-js-shopper-02.png"> 
 </td>
 </tr>
-
+ <tr>
+<td align="center">
+<img  style="width:500px" src="https://github.com/jparkley/shopper-react-node-shopping-cart/blob/master/screenshot-js-shopper-03.png"> 
+</td>
+</tr>
 </tbody>
 </table>
 
