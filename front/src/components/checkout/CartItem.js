@@ -7,7 +7,6 @@ const CartItem = ({ item }) => {
     setItemQuantity(item.id, Number(e.target.value))
   }
 
-  // NEED TO WORK ON MODAL SIZE CHANGE
   return (
     <>
       <div className="d-flex align-items-center mt-3">
