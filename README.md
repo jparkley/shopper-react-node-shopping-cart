@@ -1,6 +1,6 @@
 # Shopping Cart - Shopper
 
-** Shopper is a simple shopping cart in React, Node, Express and Bootstrap. It utilizes react-query, a shopping cart package, 'use-shopping-cart', and payment gateway 'Stripe'. There are also a couple of custom hooks created to follow the DRY principle.**
+**Shopper is a simple shopping cart in React, Node, Express and Bootstrap. It utilizes react-query, a shopping cart package, 'use-shopping-cart', and payment gateway 'Stripe'. There are also a couple of custom hooks created to follow the DRY principle.**
 
 - Homepage: list of products
 - Product page: details of a product.
